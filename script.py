@@ -3,6 +3,34 @@ import random
 import math
 import time
 
+
+
+
+
+# Initialize canvas and context
+canvas = document["canvas"]
+context = canvas.getContext("2d")
+
+# Canvas dimensions
+width, height = canvas.width, canvas.height
+
+def draw_white_canvas():
+    context.fillStyle = 'white'
+    context.fillRect(0, 0, width, height)
+
+def draw_black_canvas():
+    context.fillStyle = 'black'
+    context.fillRect(0, 0, width, height)
+
+# Draw white canvas initially
+draw_white_canvas()
+
+# Change to black canvas after 2 seconds
+timer.set_timeout(draw_black_canvas, 2000)
+
+
+
+
 # Initialize variables
 width, height = 800, 600
 circle_center = (width // 2, height // 2)
