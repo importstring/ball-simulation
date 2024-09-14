@@ -28,8 +28,7 @@ def create_ball():
         'dx': random.uniform(-2, 2),
         'dy': random.uniform(-2, 2),
         'color': colors['white'],
-        'radius': ball_radius,
-        'superpower': None
+        'radius': ball_radius
     }
 
 balls.append(create_ball())
@@ -44,9 +43,8 @@ def draw():
     canvas = document["canvas"]
     context = canvas.getContext("2d")
     
-    context.fillStyle = "black"
-    context.fillRect(0, 0, width, height)
-
+    context.clearRect(0, 0, width, height)
+    
     context.strokeStyle = 'white'
     context.beginPath()
     context.arc(circle_center[0], circle_center[1], circle_radius, 0, 2 * window.Math.PI)
@@ -92,8 +90,6 @@ def update():
         context.fill()
 
     balls.extend(new_balls)
-
-    context.clearRect(0, 0, width, height)
     draw()
 
 timer.set_interval(update, 1000 / 60)  # 60 FPS
