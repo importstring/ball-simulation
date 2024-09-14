@@ -93,7 +93,7 @@ def update():
 
     balls.extend(new_balls)
 
-    document["canvas"].getContext("2d").clearRect(0, 0, width, height)
+    context.clearRect(0, 0, width, height)
     draw()
 
 timer.set_interval(update, 1000 / 60)  # 60 FPS
