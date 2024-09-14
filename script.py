@@ -28,7 +28,7 @@ draw_white_canvas()
 # Change to black canvas after 2 seconds
 timer.set_timeout(draw_black_canvas, 2000)
 
-
+draw_white_canvas()
 
 
 # Initialize variables
