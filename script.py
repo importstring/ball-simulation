@@ -43,7 +43,8 @@ def draw():
     canvas = document["canvas"]
     context = canvas.getContext("2d")
     
-    context.clearRect(0, 0, width, height)
+    context.fillStyle = "black"
+    context.fillRect(0, 0, width, height)
     
     context.strokeStyle = 'white'
     context.beginPath()
