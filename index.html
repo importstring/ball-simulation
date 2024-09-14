@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ball Simulation</title>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.10.6/brython.min.js"></script>
     <style>
-        canvas {
-            border: 1px solid black;
+        body {
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000; /* Optional: Background color for contrast */
+        }
+        #canvas {
+            border: 1px solid white; /* Optional: To visualize the canvas border */
         }
     </style>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.10.6/brython.min.js"></script>
 </head>
 <body onload="brython()">
     <canvas id="canvas" width="800" height="600"></canvas>
