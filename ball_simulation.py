@@ -82,6 +82,10 @@ def assign_random_superpower():
 running = True
 next_ball_white = False
 
+# Main loop
+running = True
+next_ball_white = False
+
 while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
