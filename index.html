@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Controlled Ball Bouncing Simulation</title>
-    <style>
-        body { margin: 0; }
-        canvas { display: block; margin: 0 auto; background: #000; }
-    </style>
+    <title>Ball Simulation</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.6/brython.min.js"></script>
 </head>
-<body>
-    <canvas id="gameCanvas" width="800" height="600"></canvas>
-    <script src="script.js"></script>
+<body onload="brython()">
+    <h1>Ball Simulation</h1>
+    <canvas id="canvas" width="800" height="600"></canvas>
+    <script type="text/python" src="script.py"></script>
 </body>
 </html>
